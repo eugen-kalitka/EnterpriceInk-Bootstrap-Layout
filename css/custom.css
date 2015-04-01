@@ -130,6 +130,10 @@ header {
         margin-top: 32px;
         margin-bottom: 35px;
     }
+    .greatings-column {
+        padding-left: 2.0833333%;
+        padding-right: 2.0833333%;
+    }
 
         .greatings-column h2,
         .greatings-column h3 {
@@ -162,10 +166,47 @@ header {
     /* --- Carousel styles --- */
 
     #main-carousel {
-        margin: -5px 20px 0 0;
+        margin: -5px 0 0 4.375%; /* 40px*/
         padding: 0 0 30px 0;
-        max-width: 579px;
+        width: 60.3125%; /* 579px*/
     }
+
+        #main-carousel .carousel-top-shadow {
+            background: url(../img/slider-shadow-top.png) center no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -29px;
+            height: 29px;
+            width: 100%; /*579px*/
+        }
+
+        #main-carousel .carousel-bottom-shadow {
+            background: url(../img/slider-shadow-bottom.png) center no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 50%;
+            margin-left: -203px;
+            width: 100%; /*406px*/
+            height: 26px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            visibility: hidden;
+        }
+
+            .carousel-inner .carousel-caption {
+                background: rgba(0, 0, 0, 0.5);
+                color: #e0e9cc;
+                font-size: 1.5em;
+                left: 0;
+                bottom: 0;
+                height: 27.027027%;
+                vertical-align: middle;
+                padding-left: 7.0689655%; /*padding: 28px 41px;*/
+                text-align: left;
+                width: 100%;
+            }
 
         /* --- Carousel controls styles --- */
 
@@ -213,8 +254,12 @@ header {
 /* ----- MAIN ----- */
 
     .fake-indicators {
-        margin-top: 20px;
+        margin-top: 18px;
         margin-bottom: 15px;
+        max-width: 579px;
+        position: relative;
+        left: 4.375%; /*40px*/
+        z-index: 100;
     }
 
          .fake-indicators span {
@@ -224,7 +269,7 @@ header {
             width: 13px;
             height: 14px;
             border: none;
-            margin: 0 10px 0;
+            margin: 0 8px 0;
             padding: 0;
             transition: 100ms;
         }
@@ -238,13 +283,46 @@ header {
 
     .content-line {
         background: url(../img/content-line.png) center no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 1px;
         margin-bottom: 20px;
     }
 
     .content-first {
-        margin-bottom: 42px;
+        margin-bottom: 32px;
+    }
+
+    /* --- Button styles --- */
+
+    .content-first .btn,
+    .recent-works-block .btn {
+        border-radius: 15px;
+        font-size: 0.857142857em;
+        line-height: 1;
+        text-indent: 2px;
+        padding: 10px 21px;
+        margin-top: 15px;
+    }
+
+    .main .btn-default {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+        border-color: #cdcdcd;
+        color: #666;
+        margin-bottom: 10px;
+        transition: 200ms;
+    }
+
+    .main .btn-default:hover,
+    .main .btn-default:focus,
+    .main .btn-default:active {
+        background: #e4e4e4;
+        outline: none;
     }
 
         .content-first .high-quality-col {
@@ -276,14 +354,35 @@ header {
         .content-first h4 {
             color: #666;
             font: 1.857142857em 'MyriadPro-Regular';
+            margin: 0;
+            padding: 22px 0 0 100px;
+        }
+
+        .content-first p {
+            line-height: 2;
         }
 
 
 /* --- Recent works block --- */
 
     .recent-works-block {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
+        padding-top: 8px;
     }
+
+        .recent-works-block img {
+            border: 3px solid #cdcdcd;
+        }
+
+        .recent-works-block h4 {
+            color: #666;
+            font: 1.857142857em 'MyriadPro-Regular';
+            margin: 15px 0 5px 0;
+        }
+
+        .recent-works-block p {
+            line-height: 2;
+        }
 
         .recent-work-col-second {
             padding-left: 15px;
@@ -296,9 +395,44 @@ header {
 
 /* --- Twitter line --- */
 
-    .twitter-line .bird {
+.twit-line {
+    margin-bottom: 45px;
+}
+
+    .twit-line .twit-bird {
         min-height: 81px;
+        padding-left: 13px;
     }
+
+    .twit-line .twit-text {
+        font-size: 1.285714286em;
+        line-height: 1.3;
+        padding: 15px 28px;
+    }
+
+        .twit-line .twit-text a {
+            color: inherit;
+        }
+
+        .twit-line .twit-text a:hover,
+        .twit-line .twit-text a:focus {
+            color: #666;
+            text-decoration: underline;
+        }
+
+    .twit-line .twit-button {
+        padding-left: 57px;
+    }
+
+        .twit-line .btn {
+            border-radius: 1px;
+            font-size: 1.285714286em;
+            line-height: 1;
+            text-indent: 2px;
+            padding: 12px 26px;
+            margin-top: 13px;
+        }
+
 
 
 
@@ -307,17 +441,65 @@ header {
 
 footer {
     background-color: #162623;
-    min-height: 125px;
 }
 
+    footer .row {
+        padding: 38px 0 65px 0;
+    }
+
+        footer .list-inline {
+            padding-left: 10px;
+            margin-bottom: 30px;
+        }
+
+            footer .list-inline li {
+                padding: 0 14px;
+            }
+
+                footer a {
+                    color: #1eafb5;
+                }
+
+                footer a:hover {
+                    color: #cefefe;
+                    text-decoration: none;
+                }
+
+        footer small {
+            color: #1eafb5;
+            font-size: 1em;
+            padding: 0 10px 0 77px !important;
+        }
 
 
 
 /*----- MEDIA QUERIES -----*/
 
+@media screen and (max-width: 539px) {
+   .carousel-inner .carousel-caption {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .twit-line .twit-button {
+        padding-left: 10px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .container nav ul {
         margin-top: 10px;
+    }
+    .greatings-column {
+        padding-left: 20px;
+    }
+    #main-carousel {
+        width: auto;
+        margin-left: 20px;
+    }
+    .fake-indicators {
+        left: 20px;
     }
 }
 

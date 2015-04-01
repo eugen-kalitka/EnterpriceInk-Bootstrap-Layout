@@ -43,7 +43,7 @@
 
     <div class="row">
 
-        <div class="greatings-column col-sm-4">
+        <div class="greatings-column col-sm-4 col-xs-12">
 
             <h2>Hello!</h2>
             <h3>You are here</h3>
@@ -57,7 +57,9 @@
 
         </div>
 
-        <div class="col-sm-8 carousel slide pull-right" id="main-carousel" data-ride="carousel">
+        <div class="col-sm-8 col-xs-12 carousel slide" id="main-carousel" data-ride="carousel">
+            <div class="carousel-top-shadow"></div>
+
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -68,7 +70,7 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner">
 
                 <div class="item active">
                     <img class="img-responsive" src="pic/slide-1.jpg" alt="">
@@ -114,6 +116,8 @@
                 </a>
 
             </div> <!--end carousel-inner-->
+
+            <div class="carousel-bottom-shadow"></div>
         </div> <!--end carousel-->
     </div> <!--end row-->
 
@@ -123,16 +127,16 @@
 </header>
 <div class="main container">
     <div class="row">
-        <div class="col-md-5 col-md-offset-7 fake-indicators">
-            <span id="fake-ind-1"></span>
-            <span id="fake-ind-2"></span>
-            <span id="fake-ind-3"></span>
-            <span id="fake-ind-4"></span>
-            <span id="fake-ind-5"></span>
+        <div class="col-sm-8 col-sm-offset-4 col-xs-12 fake-indicators text-center">
+            <span data-target="#main-carousel" data-slide-to="0" id="fake-ind-1"></span>
+            <span data-target="#main-carousel" data-slide-to="1" id="fake-ind-2"></span>
+            <span data-target="#main-carousel" data-slide-to="2" id="fake-ind-3"></span>
+            <span data-target="#main-carousel" data-slide-to="3" id="fake-ind-4"></span>
+            <span data-target="#main-carousel" data-slide-to="4" id="fake-ind-5"></span>
         </div>
     </div>
 
-    <div class="content-line"></div>
+    <div class="content-line center-block"></div>
 
     <div class="row content-first">
 
@@ -159,25 +163,25 @@
 
     </div> <!--end content-first-->
 
-    <div class="content-line"></div>
+    <div class="content-line center-block"></div>
 
             <div class="row recent-works-block">
 
-                <div class="col-md-4 col-sm-4 recent-work-col-first">
+                <div class="col-sm-4 recent-work-col-first">
                     <img src="pic/recent-work-1.jpg" alt="">
                     <h4>Recent Work 1</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat consectetur eros pellentesque pretium. Nunc feugiat ultrices pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     <button type="button" class="btn btn-default">Read more...</button>
                 </div>
 
-                <div class="col-md-4 col-sm-4 recent-work-col-second">
+                <div class="col-sm-4 recent-work-col-second">
                     <img src="pic/recent-work-2.jpg" alt="">
                     <h4>Recent Work 2</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat consectetur eros pellentesque pretium. Nunc feugiat ultrices pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                     <button type="button" class="btn btn-default">Read more...</button>
                 </div>
 
-                <div class="col-md-4 col-sm-4 recent-work-col-third">
+                <div class="col-sm-4 recent-work-col-third">
                     <img src="pic/recent-work-3.jpg" alt="">
                     <h4>Recent Work 3</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat consectetur eros pellentesque pretium. Nunc feugiat ultrices pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -186,15 +190,15 @@
 
             </div> <!--end recent works block-->
 
-    <div class="row twitter-line">
-        <div class="col-md-1 col-xs-2 bird">
+    <div class="row twit-line">
+        <div class="col-sm-1 col-xs-2 twit-bird">
             <img src="img/bird.png" alt="">
         </div>
 
-        <div class="col-md-8 col-xs-6">Aliquam eu orci interdum, feugiat ligula sit amet, condimentum turpis.<br>
-            <span>Ut sed metus sem.</span>
+        <div class="col-sm-8 col-xs-6 twit-text">Aliquam eu orci interdum, feugiat ligula sit amet, condimentum turpis.<br>
+            <a href="#">Ut sed metus sem.</a>
         </div>
-        <div class="col-md-2 col-md-offset-1 col-xs-4">
+        <div class="col-sm-3 col-xs-4 twit-button">
             <button type="button" class="btn btn-default">More Tweets</button>
         </div>
 
@@ -214,7 +218,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
 
-        <div class="col-sm-4">Copyright 2010 © All rights reserved</div>
+        <small class="col-sm-4 col-xs-12 text-center">Copyright 2010 © All rights reserved</small>
         </div> <!--end row-->
     </div> <!--end container-->
 </footer>
