@@ -127,7 +127,7 @@
 </header>
 <div class="main container">
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-4 col-xs-12 fake-indicators text-center">
+        <div class="col-sm-8 col-sm-offset-4 col-xs-12 text-center" id="fake-indicators">
             <span data-target="#main-carousel" data-slide-to="0" id="fake-ind-1"></span>
             <span data-target="#main-carousel" data-slide-to="1" id="fake-ind-2"></span>
             <span data-target="#main-carousel" data-slide-to="2" id="fake-ind-3"></span>
@@ -191,13 +191,12 @@
     </div> <!--end recent works block-->
 
     <div class="row twit-line">
-        <div class="col-sm-1 col-xs-2 twit-bird">
-            <img src="pic/bird.png" alt="">
-        </div>
+        <div class="col-sm-1 col-xs-2 twit-bird"></div>
 
         <div class="col-sm-8 col-xs-10 twit-text">Aliquam eu orci interdum, feugiat ligula sit amet, condimentum turpis.<br>
             <a href="#">Ut sed metus sem.</a>
         </div>
+
         <div class="col-sm-3 col-xs-12 twit-button">
             <button type="button" class="btn btn-default">More Tweets</button>
         </div>
@@ -226,6 +225,65 @@
 <!--javascript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
+<script>
+
+    $(function() {
+        (function($) {
+            var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+            $.fn.attrchange = function(callback) {
+                if (MutationObserver) {
+                    var options = {
+                        subtree: false,
+                        attributes: true
+                    };
+
+                    var observer = new MutationObserver(function(mutations) {
+                        mutations.forEach(function(e) {
+                            callback.call(e.target, e.attributeName);
+                        });
+                    });
+
+                    return this.each(function() {
+                        observer.observe(this, options);
+                    });
+
+                }
+            }
+        })(jQuery);
+
+//Now you need to append event listener
+
+        $('body ol.carousel-indicators li').attrchange(function(attrName) {
+
+            if(attrName=='class'){
+                alert('class changed');
+            }else if(attrName=='id'){
+                alert('id changed');
+            }else{
+                //OTHER ATTR CHANGED
+            }
+
+        });
+    });
+
+/*
+    function changeIndicators() {
+        var slides = document.getElementById("main-carousel").getElementsByTagName("li");
+
+        var indicators = document.getElementById("fake-indicators").getElementsByTagName("span");
+
+        for(var i = 0; i < slides.length; i++) {
+            if (slides[i].className == "active") {
+                indicators[i].className = "active";
+            }
+        }
+    }
+*/
+
+</script>
 
 </div> <!--end wrapper-->
 </body>

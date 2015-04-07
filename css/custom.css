@@ -65,12 +65,14 @@ header {
 
     header .container {
         background: url(../img/2-header-texture.png) top center no-repeat;
+        background-size: contain;
         position: relative;
         z-index: 100;
     }
 
     header .logo {
-        background: url(../img/logo.png) no-repeat;
+        background: url(../img/sprites.png) -450px 0 no-repeat;
+        /*background: url(../img/logo.png) no-repeat;*/
         cursor: pointer;
         height: 76px;
         width: 276px;
@@ -182,7 +184,7 @@ header {
             background: url(../img/slider-shadow-top.png) center no-repeat;
             background-size: contain;
             position: absolute;
-            top: -29px;
+            top: -28px;
             height: 29px;
             width: 100%; /*579px*/
         }
@@ -230,7 +232,8 @@ header {
         }
 
         .carousel-inner .left-arrow {
-            background: url(../img/slider-arrow-left.png) no-repeat;
+            background: url(../img/sprites.png) 0 -100px no-repeat;
+            /*background: url(../img/slider-arrow-left.png) no-repeat;*/
             display: block;
             margin: 12px auto 0;
             width: 21px;
@@ -238,7 +241,8 @@ header {
         }
 
         .carousel-inner .right-arrow {
-            background: url(../img/slider-arrow-right.png) no-repeat;
+            background: url(../img/sprites.png) -50px -100px no-repeat;
+            /*background: url(../img/slider-arrow-right.png) no-repeat;*/
             display: block;
             margin: 12px auto 0;
             width: 21px;
@@ -246,7 +250,8 @@ header {
         }
 
     .header-shadow {
-        background: url(../img/header-shadow.png) center no-repeat;
+        background: url(../img/sprites.png) -100px -100px no-repeat;
+        /*background: url(../img/header-shadow.png) center no-repeat;*/
         background-size: contain;
         height: 53px;
         width: 508px;
@@ -261,7 +266,7 @@ header {
 
 /* ----- MAIN ----- */
 
-    .fake-indicators {
+    #fake-indicators {
         margin-top: 18px;
         margin-bottom: 15px;
         max-width: 579px;
@@ -270,7 +275,7 @@ header {
         z-index: 100;
     }
 
-         .fake-indicators span {
+         #fake-indicators span {
             background: #ababab;
             border-radius: 50%;
             display: inline-block;
@@ -281,8 +286,8 @@ header {
             padding: 0;
             transition: 100ms;
         }
-        .fake-indicators span:hover,
-        .fake-indicators .active {
+        #fake-indicators span:hover,
+        #fake-indicators .active {
             -webkit-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
                -moz-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
                     box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
@@ -351,15 +356,18 @@ header {
         }
 
         .content-first .icon-strict {
-            background: url(../pic/icon-01.png) no-repeat;
+            background: url(../img/sprites.png) -100px 0 no-repeat;
+            /*background: url(../pic/icon-01.png) no-repeat;*/
         }
 
         .content-first .icon-high {
-            background: url(../pic/icon-02.png) no-repeat;
+            background: url(../img/sprites.png) -200px 0 no-repeat;
+            /*background: url(../pic/icon-02.png) no-repeat;*/
         }
 
         .content-first .icon-best-pricing {
-            background: url(../pic/icon-03.png) no-repeat;
+            background: url(../img/sprites.png) -300px 0 no-repeat;
+            /*background: url(../pic/icon-03.png) no-repeat;*/
         }
 
         .content-first h4 {
@@ -411,8 +419,10 @@ header {
 }
 
     .twit-line .twit-bird {
+        background: url(../img/sprites.png) 10px 0 no-repeat; /*bg-position-x: 10px */
+        /*background: url(../pic/bird.png) 10px 0 no-repeat; bg-position-x: 10px */
+        float: left;
         min-height: 81px;
-        padding-left: 13px;
     }
 
     .twit-line .twit-text {
@@ -502,6 +512,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    header .container {
+        background: none;
+    }
     .container nav ul {
         margin-top: 10px;
     }
