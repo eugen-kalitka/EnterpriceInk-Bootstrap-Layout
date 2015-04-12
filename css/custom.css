@@ -36,10 +36,6 @@
 }
 
 .wrapper {
-    background: -moz-linear-gradient(top, #cfcfcf 0%, #ffffff 60%, #ffffff 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #cfcfcf), color-stop(60%, #ffffff), color-stop(100%, #ffffff));
-    background: -webkit-linear-gradient(top, #cfcfcf 0%, #ffffff 60%, #ffffff 100%);
-    background: -o-linear-gradient(top, #cfcfcf 0%, #ffffff 60%, #ffffff 100%);
     background: -ms-linear-gradient(top, #cfcfcf 0%, #ffffff 60%, #ffffff 100%);
     background: linear-gradient(to bottom, #cfcfcf 0%, #ffffff 60%, #ffffff 100%);
     color: #9a9a9a;
@@ -55,10 +51,6 @@
 
 header {
     background: #0f201c; /* Old browsers */
-    background: -moz-linear-gradient(top, #0f201c 0%, #002931 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0f201c), color-stop(100%,#002931)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #0f201c 0%,#002931 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #0f201c 0%,#002931 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #0f201c 0%,#002931 100%); /* IE10+ */
     background: linear-gradient(to bottom, #0f201c 0%,#002931 100%); /* W3C */
 }
@@ -72,7 +64,6 @@ header {
 
     header .logo {
         background: url(../img/sprites.png) -450px 0 no-repeat;
-        /*background: url(../img/logo.png) no-repeat;*/
         cursor: pointer;
         height: 76px;
         width: 276px;
@@ -97,10 +88,6 @@ header {
         header .nav-pills a:hover,
         header .nav-pills a:active,
         header .nav-pills a:focus {
-            background: -moz-linear-gradient(top,  rgba(32,107,131,0.5) 0%, rgba(86,175,183,1) 75%, rgba(104,197,200,1) 100%); /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(32,107,131,0.5)), color-stop(75%,rgba(86,175,183,1)), color-stop(100%,rgba(104,197,200,1))); /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* Opera 11.10+ */
             background: -ms-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* IE10+ */
             background: linear-gradient(to bottom,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* W3C */
             border-radius: 0;
@@ -108,10 +95,6 @@ header {
         }
 
     .navbar-toggle{
-        background: -moz-linear-gradient(top,  rgba(32,107,131,0.5) 0%, rgba(86,175,183,1) 75%, rgba(104,197,200,1) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(32,107,131,0.5)), color-stop(75%,rgba(86,175,183,1)), color-stop(100%,rgba(104,197,200,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(top,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* IE10+ */
         background: linear-gradient(to bottom,  rgba(32,107,131,0.5) 0%,rgba(86,175,183,1) 75%,rgba(104,197,200,1) 100%); /* W3C */
         margin-top: 35px;
@@ -233,7 +216,6 @@ header {
 
         .carousel-inner .left-arrow {
             background: url(../img/sprites.png) 0 -100px no-repeat;
-            /*background: url(../img/slider-arrow-left.png) no-repeat;*/
             display: block;
             margin: 12px auto 0;
             width: 21px;
@@ -242,7 +224,6 @@ header {
 
         .carousel-inner .right-arrow {
             background: url(../img/sprites.png) -50px -100px no-repeat;
-            /*background: url(../img/slider-arrow-right.png) no-repeat;*/
             display: block;
             margin: 12px auto 0;
             width: 21px;
@@ -251,8 +232,6 @@ header {
 
     .header-shadow {
         background: url(../img/sprites.png) -100px -100px no-repeat;
-        /*background: url(../img/header-shadow.png) center no-repeat;*/
-        background-size: contain;
         height: 53px;
         width: 508px;
         position: absolute;
@@ -288,9 +267,7 @@ header {
         }
         #fake-indicators span:hover,
         #fake-indicators .active {
-            -webkit-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
-               -moz-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
-                    box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
+            box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.55);
             cursor: pointer;
         }
 
@@ -319,10 +296,6 @@ header {
 
     .main .btn-default {
         background: #ffffff; /* Old browsers */
-        background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
         background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
         border-color: #cdcdcd;
@@ -357,17 +330,14 @@ header {
 
         .content-first .icon-strict {
             background: url(../img/sprites.png) -100px 0 no-repeat;
-            /*background: url(../pic/icon-01.png) no-repeat;*/
         }
 
         .content-first .icon-high {
             background: url(../img/sprites.png) -200px 0 no-repeat;
-            /*background: url(../pic/icon-02.png) no-repeat;*/
         }
 
         .content-first .icon-best-pricing {
             background: url(../img/sprites.png) -300px 0 no-repeat;
-            /*background: url(../pic/icon-03.png) no-repeat;*/
         }
 
         .content-first h4 {
@@ -420,8 +390,9 @@ header {
 
     .twit-line .twit-bird {
         background: url(../img/sprites.png) 10px 0 no-repeat; /*bg-position-x: 10px */
-        /*background: url(../pic/bird.png) 10px 0 no-repeat; bg-position-x: 10px */
+        background-size: 880%;
         float: left;
+        max-width: 84px;
         min-height: 81px;
     }
 
@@ -505,12 +476,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 653px) {
-    .twit-line .twit-button {
-        padding-left: 10px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     header .container {
         background: none;
@@ -527,6 +492,9 @@ footer {
     }
     .fake-indicators {
         left: 20px;
+    }
+    .twit-line .twit-button {
+        padding-left: 10px;
     }
     footer ul {
         text-align: center;
